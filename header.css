@@ -1,0 +1,193 @@
+@font-face {
+	font-family: 'poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url(font/poppins.woff2) format('woff2');
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+.logo {
+    display: none;
+}
+
+.desktop-logo {
+    display: flex;
+    width: 30%;
+	float: left;
+	line-height: 100px;
+    margin-left: 20px;
+
+}
+.desktop-logo a {
+    text-decoration: none;
+	font-family: poppins;
+	color: #f6f5f0;
+	letter-spacing: 5px;
+    size: 80px;
+}
+
+header {
+	height: 100px;
+	background: #123690;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+    box-shadow: #f6f5f0;
+    box-shadow: 50px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #123690;
+    height: 150px;
+    
+    
+}
+.navbar a {
+text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #f6f5f0;
+}
+    .nav-list {
+    display: flex;
+    list-style: none;
+    opacity: inherit;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+    background-color: #123690;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #123690;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #f6f5f0;
+    margin: 3px 0;
+}
+
+
+.navbar img {
+    width: 130px;
+    height: 90px;
+    float: left;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+
+.banner-area {
+	width: 100%;
+	height: 500px;
+	position: -webkit-sticky;
+	top: 100px;
+	background-image: url(images/eskele_tire.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	opacity: 80%;
+}
+ 
+.banner-area h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #f6f5f0;
+    text-align: center;
+}
+
+#mobile-menu {
+    background-color: #123690;
+}
+
+/* استایل برای موبایل */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: row-reverse;
+        width: 100%;
+        background-color: #123690;
+        color: #f6f5f0;
+        position: absolute;
+        top: 110px; /* ارتفاع navbar */
+        left: 0;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        float: right;
+        position: static;
+        margin-top: 1px;
+        background-color: #123690;
+        opacity: 100%;
+        direction: rtl;
+    }
+    .banner-area h2 {
+        font-size: 30px;
+        padding-top: 100px;
+
+        
+    }
+
+    .banner-area {
+        width: 100%;
+        margin-top: 0px;
+        height: 300px;
+        text-align: center;
+    }
+
+    .navbar img {
+        width: 100px;
+        height: 60px;
+        /* float: left; */
+        /* line-height: 50px; */
+        /* margin-left: 10px;
+        margin-top: 5px; */
+        padding: 5px;
+    }
+    .navbar{
+        height: 140px;
+    }
+    .nav-list a {
+        font-size: 12px;
+    }
+    .desktop-logo {
+        display: none;
+    }
+    .logo {
+        display: flex;
+    }
+}
