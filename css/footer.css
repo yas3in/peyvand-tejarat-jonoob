@@ -138,3 +138,10 @@ a:hover {
 	bottom:0;
 	left:0;
 }
+
+.fa-gmail {
+	content: url('assets/images/gmail.svg');
+	height: 1em;
+	width: auto;
+  }
+  
